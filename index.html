@@ -48,6 +48,7 @@ button{cursor:pointer}
 .nav-actions{display:flex;align-items:center;gap:9px}
 .icon-link,.menu-btn{width:39px;height:39px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);border-radius:50%;color:#fff;background:rgba(255,255,255,.05);transition:.25s}
 .icon-link:hover,.menu-btn:hover{background:var(--gold);color:var(--brown);border-color:var(--gold)}
+.icon-link svg{width:18px;height:18px;fill:currentColor}
 .cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:var(--brown);font-weight:700;border-radius:999px;padding:13px 21px;border:1px solid var(--gold);transition:.25s;box-shadow:0 10px 25px rgba(0,0,0,.12)}
 .cta:hover{transform:translateY(-2px);background:#e1bf6b}
 .cta.outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
@@ -83,7 +84,8 @@ button{cursor:pointer}
 .card-icon{width:47px;height:47px;display:grid;place-items:center;border-radius:14px;background:#f7ecda;color:var(--maroon);font-size:1.35rem;margin-bottom:22px}
 .card h3{font:600 1.65rem/1 "Cormorant Garamond",serif}
 .card p{font-size:.78rem;color:var(--muted);margin:10px 0 17px}
-.card .enquire{margin-top:auto;color:var(--maroon);font-weight:700;font-size:.75rem}
+.card .enquire{margin-top:auto;color:var(--maroon);font-weight:700;font-size:.75rem;display:inline-flex;align-items:center;gap:4px}
+.card .enquire svg{width:14px;height:14px;fill:currentColor}
 .features{background:var(--brown);color:#fff;padding:65px 0}
 .feature-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
 .feature{text-align:center;padding:10px}
@@ -119,10 +121,12 @@ button{cursor:pointer}
 .contact-list{display:grid;gap:15px}
 .contact-item{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);background:#fff;border-radius:16px}
 .contact-item .ico{width:38px;height:38px;border-radius:10px;background:#f5ead7;display:grid;place-items:center;color:var(--maroon);flex:none}
+.contact-item .ico svg{width:18px;height:18px;fill:currentColor}
 .contact-item small{display:block;color:var(--muted);font-size:.68rem}
 .contact-item a,.contact-item span{font-weight:600;font-size:.84rem}
 .socials{display:flex;gap:10px;margin-top:20px}
-.socials a{border:1px solid var(--line);padding:10px 14px;border-radius:999px;font-size:.75rem;font-weight:700;background:#fff}
+.socials a{border:1px solid var(--line);padding:10px 14px;border-radius:999px;font-size:.75rem;font-weight:700;background:#fff;display:inline-flex;align-items:center;gap:6px}
+.socials a svg{width:14px;height:14px;fill:currentColor}
 .form{background:#fff;border:1px solid var(--line);padding:30px;border-radius:22px;box-shadow:0 15px 50px rgba(36,17,13,.06)}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .field{display:grid;gap:6px;margin-bottom:14px}
@@ -139,8 +143,11 @@ textarea{min-height:120px;resize:vertical}
 .footer h4{font:600 1.4rem "Cormorant Garamond",serif;margin-bottom:15px;color:#e4c879}
 .footer-links{display:grid;gap:8px;font-size:.73rem;color:rgba(255,255,255,.7)}
 .footer-links a:hover{color:var(--gold)}
+.footer-links a svg{width:14px;height:14px;fill:currentColor;display:inline;vertical-align:middle;margin-right:4px}
 .copyright{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:.65rem;color:rgba(255,255,255,.42);display:flex;justify-content:space-between;gap:15px}
-.float-wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;background:#25D366;color:#fff;border-radius:50%;display:grid;place-items:center;z-index:90;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:1.45rem;border:3px solid #fff}
+.float-wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;background:#25D366;color:#fff;border-radius:50%;display:grid;place-items:center;z-index:90;box-shadow:0 10px 30px rgba(0,0,0,.25);border:3px solid #fff;transition:.25s}
+.float-wa:hover{transform:scale(1.08)}
+.float-wa svg{width:28px;height:28px;fill:#fff}
 .mobile-drawer{position:fixed;inset:0;background:rgba(24,11,9,.98);z-index:99;display:none;padding:95px 8% 30px}
 .mobile-drawer.open{display:block}
 .mobile-drawer nav{display:grid;gap:5px}
@@ -187,8 +194,12 @@ textarea{min-height:120px;resize:vertical}
       <a href="#home">Home</a><a href="#about">About</a><a href="#classes">Classes</a><a href="#teacher">Teacher</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a class="icon-link" aria-label="Instagram" href="https://www.instagram.com/_charukesi__/" target="_blank" rel="noopener">◎</a>
-      <a class="icon-link" aria-label="WhatsApp" href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">◉</a>
+      <a class="icon-link" aria-label="Instagram" href="https://www.instagram.com/_charukesi__/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.2-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+      </a>
+      <a class="icon-link" aria-label="WhatsApp" href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg>
+      </a>
       <a class="cta" href="#contact">Join Classes</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
@@ -248,14 +259,14 @@ textarea{min-height:120px;resize:vertical}
     <h2 class="section-title reveal">Our Classes</h2>
     <p class="section-lead reveal">Discover your rhythm. Find your expression.</p>
     <div class="cards">
-      <article class="card reveal"><div class="card-icon">♪</div><h3>Carnatic Music</h3><p>Build a foundation in traditional Carnatic vocal music.</p><a class="enquire" href="#" onclick="openWhatsApp('Carnatic Music');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">♫</div><h3>Film Songs</h3><p>Learn and develop your expression through film songs.</p><a class="enquire" href="#" onclick="openWhatsApp('Film Songs');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">♬</div><h3>Violin</h3><p>Explore violin playing with guided practical training.</p><a class="enquire" href="#" onclick="openWhatsApp('Violin');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">♩</div><h3>Keyboard</h3><p>Discover melody, rhythm and keyboard fundamentals.</p><a class="enquire" href="#" onclick="openWhatsApp('Keyboard');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">♮</div><h3>Mridangam</h3><p>Explore rhythm and traditional percussion learning.</p><a class="enquire" href="#" onclick="openWhatsApp('Mridangam');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">◌</div><h3>Classical Dance</h3><p>Learn movement and expression rooted in classical tradition.</p><a class="enquire" href="#" onclick="openWhatsApp('Classical Dance');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">✦</div><h3>Cinematic Dance</h3><p>Build movement, rhythm and expressive performance skills.</p><a class="enquire" href="#" onclick="openWhatsApp('Cinematic Dance');return false">Enquire →</a></article>
-      <article class="card reveal"><div class="card-icon">⌁</div><h3>Guitar</h3><p>Explore guitar learning through guided practice.</p><a class="enquire" href="#" onclick="openWhatsApp('Guitar');return false">Enquire →</a></article>
+      <article class="card reveal"><div class="card-icon">♪</div><h3>Carnatic Music</h3><p>Build a foundation in traditional Carnatic vocal music.</p><a class="enquire" href="#" onclick="openWhatsApp('Carnatic Music');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">♫</div><h3>Film Songs</h3><p>Learn and develop your expression through film songs.</p><a class="enquire" href="#" onclick="openWhatsApp('Film Songs');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">♬</div><h3>Violin</h3><p>Explore violin playing with guided practical training.</p><a class="enquire" href="#" onclick="openWhatsApp('Violin');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">♩</div><h3>Keyboard</h3><p>Discover melody, rhythm and keyboard fundamentals.</p><a class="enquire" href="#" onclick="openWhatsApp('Keyboard');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">♮</div><h3>Mridangam</h3><p>Explore rhythm and traditional percussion learning.</p><a class="enquire" href="#" onclick="openWhatsApp('Mridangam');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">◌</div><h3>Classical Dance</h3><p>Learn movement and expression rooted in classical tradition.</p><a class="enquire" href="#" onclick="openWhatsApp('Classical Dance');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">✦</div><h3>Cinematic Dance</h3><p>Build movement, rhythm and expressive performance skills.</p><a class="enquire" href="#" onclick="openWhatsApp('Cinematic Dance');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
+      <article class="card reveal"><div class="card-icon">⌁</div><h3>Guitar</h3><p>Explore guitar learning through guided practice.</p><a class="enquire" href="#" onclick="openWhatsApp('Guitar');return false"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> Enquire</a></article>
     </div>
   </div>
 </section>
@@ -327,7 +338,7 @@ textarea{min-height:120px;resize:vertical}
 <section class="cta-section">
   <div class="container cta-box">
     <div class="reveal"><div class="eyebrow">Your next chapter</div><h2 class="section-title">Begin Your Musical Journey</h2><p>Ready to learn, explore and grow through music and dance?</p></div>
-    <div class="hero-actions reveal"><a class="cta" href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">WhatsApp Us</a><a class="cta outline" href="#classes">View Classes</a></div>
+    <div class="hero-actions reveal"><a class="cta" href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg> WhatsApp Us</a><a class="cta outline" href="#classes">View Classes</a></div>
   </div>
 </section>
 
@@ -341,7 +352,7 @@ textarea{min-height:120px;resize:vertical}
         <div class="contact-list">
           <div class="contact-item"><div class="ico">⌖</div><div><small>Location</small><span>Vandithadam, Thiruvananthapuram, Kerala</span></div></div>
           <div class="contact-item"><div class="ico">✉</div><div><small>Email</small><a href="mailto:charukesi2018@gmail.com">charukesi2018@gmail.com</a></div></div>
-          <div class="contact-item"><div class="ico">◉</div><div><small>WhatsApp</small><a href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">+91 81118 84177</a></div></div>
+          <div class="contact-item"><div class="ico"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg></div><div><small>WhatsApp</small><a href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">+91 81118 84177</a></div></div>
         </div>
         <div class="socials">
           <a href="https://www.instagram.com/_charukesi__/" target="_blank" rel="noopener">Instagram</a>
@@ -374,13 +385,15 @@ textarea{min-height:120px;resize:vertical}
         <p>Music • Dance • Tradition<br>Vandithadam, Thiruvananthapuram</p>
       </div>
       <div><h4>Explore</h4><nav class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#classes">Classes</a><a href="#teacher">Teacher</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav></div>
-      <div><h4>Connect</h4><nav class="footer-links"><a href="https://www.instagram.com/_charukesi__/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/people/Charukesi-Sangeetha-Nirtha-Kalakhestram/pfbid02xCZdXYoRADWoFkxPsdVipCQWRNZ7CxLaTxuMsin1S9RXitRruKszUqh4neyBBEvJl/" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:charukesi2018@gmail.com">Email</a></nav></div>
+      <div><h4>Connect</h4><nav class="footer-links"><a href="https://www.instagram.com/_charukesi__/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/people/Charukesi-Sangeetha-Nirtha-Kalakhestram/pfbid02xCZdXYoRADWoFkxPsdVipCQWRNZ7CxLaTxuMsin1S9RXitRruKszUqh4neyBBEvJl/" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg>WhatsApp</a><a href="mailto:charukesi2018@gmail.com">Email</a></nav></div>
     </div>
     <div class="copyright"><span>© 2026 Charukesi Sangeetha Nirtha Kalashetram. All rights reserved.</span><span>Music • Dance • Tradition</span></div>
   </div>
 </footer>
 
-<a class="float-wa" aria-label="Contact Charukesi on WhatsApp" href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">◉</a>
+<a class="float-wa" aria-label="Contact Charukesi on WhatsApp" href="https://wa.me/918111884177?text=Name%3A+%0APhone+Number%3A+%0AItem%3A+" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.5-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.2.3-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.4 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.1 8.3z"/></svg>
+</a>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-close" id="lbClose" aria-label="Close image viewer">×</button>
